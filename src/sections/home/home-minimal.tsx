@@ -6,6 +6,7 @@ import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import Grid from '@mui/material/Unstable_Grid2';
 import Container from '@mui/material/Container';
+import { useTheme } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
 
 import { CONFIG } from 'src/config-global';
@@ -20,6 +21,8 @@ import { CircleSvg, FloatLine, FloatPlusIcon } from './components/svg-elements';
 // ----------------------------------------------------------------------
 
 export function HomeMinimal({ sx, ...other }: StackProps) {
+  const dtheme = useTheme();
+
   const renderLines = (
     <>
       <FloatPlusIcon sx={{ top: 72, left: 72 }} />
@@ -54,7 +57,26 @@ export function HomeMinimal({ sx, ...other }: StackProps) {
             gap={3}
             display="flex"
           >
-            <SvgColor color="warning" src={item.icon} sx={{ width: 40, height: 40 }} />
+            <Box
+              sx={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                width: 48,
+                height: 48,
+                borderRadius: 1,
+                backgroundColor:
+                  dtheme.palette.mode === 'dark'
+                    ? dtheme.palette.grey[100]
+                    : dtheme.palette.grey[900],
+              }}
+            >
+              <SvgColor
+                src={item.icon}
+                width={24}
+                color={dtheme.palette.primary.main} // or use one of the other options mentioned above
+              />
+            </Box>
             <Stack spacing={1}>
               <Typography variant="h5" component="h6">
                 {item.title}
