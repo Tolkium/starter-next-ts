@@ -34,7 +34,7 @@ export function HomeMinimal({ sx, ...other }: StackProps) {
     <>
       <SectionTitle
         caption="Visualizing Success"
-        title="What's in"
+        title="Why Ignite dashboard?"
         txtGradient="Minimal?"
         sx={{ mb: { xs: 5, md: 8 }, textAlign: { xs: 'center', md: 'left' } }}
       />
@@ -54,7 +54,7 @@ export function HomeMinimal({ sx, ...other }: StackProps) {
             gap={3}
             display="flex"
           >
-            <SvgColor src={item.icon} sx={{ width: 40, height: 40 }} />
+            <SvgColor color="warning" src={item.icon} sx={{ width: 40, height: 40 }} />
             <Stack spacing={1}>
               <Typography variant="h5" component="h6">
                 {item.title}

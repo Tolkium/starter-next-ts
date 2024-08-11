@@ -10,6 +10,7 @@ import { HomeFAQs } from '../home-faqs';
 import { HomeZoneUI } from '../home-zone-ui';
 import { HomeMinimal } from '../home-minimal';
 import { HomeIntegrations } from '../home-integrations';
+import { HomeTestimonials } from '../home-testimonials';
 import { HomeAdvertisement } from '../home-advertisement';
 
 // ----------------------------------------------------------------------
@@ -33,6 +34,8 @@ export function HomeView() {
         <HomeMinimal />
 
         <HomeIntegrations />
+
+        <HomeTestimonials />
 
         <HomeFAQs />
 

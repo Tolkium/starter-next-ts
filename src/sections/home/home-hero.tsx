@@ -22,7 +22,7 @@ import { useResponsive } from 'src/hooks/use-responsive';
 
 import { _mock } from 'src/_mock';
 import { CONFIG } from 'src/config-global';
-import { textGradient } from 'src/theme/styles';
+import { textGradient } from 'src/theme/styles/mixins';
 
 import { Iconify } from 'src/components/iconify';
 import { SvgColor } from 'src/components/svg-color';
@@ -73,10 +73,10 @@ export function HomeHero({ sx, ...other }: StackProps) {
           [theme.breakpoints.up(lgKey)]: { fontSize: 72, lineHeight: '90px' },
         }}
       >
-        <Box component="span" sx={{ width: 1, opacity: 0.24 }}>
+        {/* <Box component="span" sx={{ width: 1, opacity: 0.24 }}>
           Boost your building
-        </Box>
-        process with
+        </Box> */}
+        Data that actually
         <Box
           component={m.span}
           animate={{ backgroundPosition: '200% center' }}
@@ -94,7 +94,7 @@ export function HomeHero({ sx, ...other }: StackProps) {
             ml: { xs: 0.75, md: 1, xl: 1.5 },
           }}
         >
-          Minimal
+          matters!
         </Box>
       </Box>
     </MInview>
@@ -106,11 +106,12 @@ export function HomeHero({ sx, ...other }: StackProps) {
         variant="body2"
         sx={{
           mx: 'auto',
-          [theme.breakpoints.up(smKey)]: { whiteSpace: 'pre' },
+          // [theme.breakpoints.up(smKey)]: { whiteSpace: 'pre' },
           [theme.breakpoints.up(lgKey)]: { fontSize: 20, lineHeight: '36px' },
         }}
       >
-        {`The starting point for your next project is based on MUI. \nEasy customization helps you build apps faster and better.`}
+        {`Experience new way of tracking your Etsy data and finances with the only platform that offers actual net profit together with other essential analytics.
+`}
       </Typography>
     </MInview>
   );
@@ -281,9 +282,9 @@ export function HomeHero({ sx, ...other }: StackProps) {
             <m.div style={{ y: y1 }}>{renderHeading}</m.div>
             <m.div style={{ y: y2 }}>{renderText}</m.div>
           </Stack>
-          <m.div style={{ y: y3 }}>{renderRatings}</m.div>
+          {/* <m.div style={{ y: y3 }}>{renderRatings}</m.div>
           <m.div style={{ y: y4 }}>{renderButtons}</m.div>
-          <m.div style={{ y: y5 }}>{renderIcons}</m.div>
+          <m.div style={{ y: y5 }}>{renderIcons}</m.div> */}
         </Container>
 
         <HeroBackground />
