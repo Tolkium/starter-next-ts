@@ -21,7 +21,7 @@ import { CircleSvg, FloatLine, FloatPlusIcon } from './components/svg-elements';
 // ----------------------------------------------------------------------
 
 export function HomeMinimal({ sx, ...other }: StackProps) {
-  const dtheme = useTheme();
+  const currentTheme = useTheme();
 
   const renderLines = (
     <>
@@ -65,17 +65,14 @@ export function HomeMinimal({ sx, ...other }: StackProps) {
                 width: 48,
                 height: 48,
                 borderRadius: 1,
+                flexShrink: 0,
                 backgroundColor:
-                  dtheme.palette.mode === 'dark'
-                    ? dtheme.palette.grey[100]
-                    : dtheme.palette.grey[900],
+                  currentTheme.palette.mode === 'dark'
+                    ? currentTheme.palette.grey[100]
+                    : currentTheme.palette.grey[900],
               }}
             >
-              <SvgColor
-                src={item.icon}
-                width={24}
-                color={dtheme.palette.primary.main} // or use one of the other options mentioned above
-              />
+              <SvgColor src={item.icon} width={24} color={currentTheme.palette.primary.light} />
             </Box>
             <Stack spacing={1}>
               <Typography variant="h5" component="h6">
