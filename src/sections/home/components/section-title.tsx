@@ -63,11 +63,10 @@ export function SectionTitle({
         <Box
           component="span"
           sx={{
-            opacity: 0.4,
-            display: 'inline-block',
             ...textGradient(
-              `to right, ${theme.vars.palette.text.primary}, ${varAlpha(theme.vars.palette.text.primaryChannel, 0.2)}`
+              `300deg, ${theme.vars.palette.primary.main} 0%, ${theme.vars.palette.warning.main} 25%, ${theme.vars.palette.primary.main} 50%, ${theme.vars.palette.warning.main} 75%, ${theme.vars.palette.primary.main} 100%`
             ),
+            backgroundSize: '400%',
           }}
         >
           {txtGradient}

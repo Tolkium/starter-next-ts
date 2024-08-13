@@ -44,20 +44,20 @@ export function HomeIntegrations({ sx, ...other }: StackProps) {
 
   const renderDescription = (
     <SectionTitle
-      caption="Integrations"
-      title="Robust integration"
-      txtGradient="framework"
+      caption="Detailed features"
+      title="One dashboard to"
+      txtGradient="Rule them ALL"
       description={
         <>
           <Box component="span" sx={{ mb: 1, display: 'block' }}>
-            A comprehensive suite of integrations offers diverse functionalities.
+            TEXT58.
           </Box>
           <Box
             component="span"
             sx={{ fontStyle: 'italic', color: 'text.disabled', typography: 'caption' }}
           >
-            * Only includes authentication methods.
-            <br />* Database not included.
+            *.
+            <br />*.
           </Box>
         </>
       }

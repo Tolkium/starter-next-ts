@@ -36,9 +36,8 @@ export function HomeMinimal({ sx, ...other }: StackProps) {
   const renderDescription = (
     <>
       <SectionTitle
-        caption="Visualizing Success"
+        caption="Key features"
         title="Why Ignite dashboard?"
-        txtGradient="Minimal?"
         sx={{ mb: { xs: 5, md: 8 }, textAlign: { xs: 'center', md: 'left' } }}
       />
 
@@ -156,17 +155,17 @@ export function HomeMinimal({ sx, ...other }: StackProps) {
 const ITEMS = [
   {
     icon: `${CONFIG.site.basePath}/assets/icons/home/ic-make-brand.svg`,
-    title: 'Branding',
-    description: 'Consistent design makes it easy to brand your own.',
+    title: 'Fast & Data-Driven Decision Making',
+    description: 'All important data from your stores in one place',
   },
   {
     icon: `${CONFIG.site.basePath}/assets/icons/home/ic-design.svg`,
-    title: 'UI & UX design',
-    description: 'The kit is built on the principles of the atomic design system.',
+    title: 'Comprehensive and Accurate Profit Tracking',
+    description: 'No more guessing your net profit thanks to our innovative system',
   },
   {
     icon: `${CONFIG.site.basePath}/assets/icons/home/ic-development.svg`,
-    title: 'Development',
-    description: 'Easy to customize and extend, saving you time and money.',
+    title: 'Real-Time Updates',
+    description: 'Acces your data from your PC or Phone',
   },
 ];
